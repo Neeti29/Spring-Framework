@@ -1,52 +1,37 @@
-package com.niit.springcore;
-//Loosely Coupled Class
-//Bean or Model or Pojo class
+package com.niit.model;
+
 public class Employee {
+
+	private int id;
+	private String name;
+	private float salary;
+	private String designation;
 	
-	private int eid;
-	private String ename;
-	Address eaddress;
-	
-	public Employee() {
-
+	public int getId() {
+		return id;
 	}
-
-	public Employee(Address eaddress) {
-		super();
-		this.eaddress = eaddress;
+	public void setId(int id) {
+		this.id = id;
 	}
-
-	public int getEid() {
-		return eid;
+	public String getName() {
+		return name;
 	}
-
-	public void setEid(int eid) {
-		this.eid = eid;
+	public void setName(String name) {
+		this.name = name;
 	}
-
-	public String getEname() {
-		return ename;
+	public float getSalary() {
+		return salary;
 	}
-
-	public void setEname(String ename) {
-		this.ename = ename;
+	public void setSalary(float salary) {
+		this.salary = salary;
 	}
-
-	public Address getEaddress() {
-		return eaddress;
+	public String getDesignation() {
+		return designation;
 	}
-
-	public void setEaddress(Address eaddress) {
-		this.eaddress = eaddress;
+	public void setDesignation(String designation) {
+		this.designation = designation;
 	}
-
-	@Override
-	public String toString() {
-		return "Employee [eid=" + eid + ", ename=" + ename + ", eaddress=" + eaddress + "]";
-	}
-
 	
 	
-
 	
 }
